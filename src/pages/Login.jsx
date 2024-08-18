@@ -11,7 +11,7 @@ export default function Login(){
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('https://backend-southstar.onrender.co', {
+            const response = await axios.post('https://backend-southstar.onrender.com', {
                 name,
                 password
             });
