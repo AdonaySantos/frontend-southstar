@@ -5,13 +5,17 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import ForgotPassword from './pages/ForgotPassword';
 import Register from './pages/Register';
+import Header from './components/Header';
 
 const router = createBrowserRouter([
   {
     element:
     (
       <>
-        <Outlet />
+        <Header />
+        <main>
+          <Outlet />
+        </main>
       </>
     ),
     children: [

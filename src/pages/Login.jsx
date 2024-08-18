@@ -51,11 +51,11 @@ export default function Login(){
                                 <input type="checkbox" />
                                 Lembre de mim
                             </label>
-                            <a href="/forgot-password">Esqueceu a senha?</a>
+                            <a href="/password-recovery">Esqueceu a senha?</a>
                         </div>
                         <button type="submit">Entrar</button>
                         <div className="signup-link">
-                            <p>Não tem uma conta? <a href="/cadastro">Registrar</a></p>
+                            <p>Não tem uma conta? <a href="/register">Registrar</a></p>
                         </div>
                         {message && <p>{message}</p>}
                     </form>
