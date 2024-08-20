@@ -9,7 +9,7 @@ export default function ForgotPassword(){
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('https://backend-southstar.onrender.co', {
+            const response = await axios.post('https://backend-southstar.onrender.com', {
                 name
             });
             setMessage(`Senha: ${response.data.password}`); 
