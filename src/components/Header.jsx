@@ -1,5 +1,6 @@
 import "./Header.css";
 import logo from "../assets/react.svg";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -9,9 +10,9 @@ export default function Header() {
           <img src={logo} alt="" />
         </div>
         <div className="links-nav">
-          <a href="/">Home</a>
-          <a href="/login">Login</a>
-          <a href="/register">Cadastro</a>
+          <Link to="/">Home</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/cadastro">Cadastro</Link>
         </div>
       </header>
     </>

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "../static/Register.css";
+import "../static/Cadastro.css";
 import { FaLock, FaUser } from "react-icons/fa";
 import axios from "axios";
 
-export default function Register() {
+export default function Cadastro() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");

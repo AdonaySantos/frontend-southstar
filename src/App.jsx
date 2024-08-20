@@ -1,43 +1,47 @@
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import "./App.css";
-import Header from "./components/Header";
-import ForgotPassword from "./pages/ForgotPassword";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+import React from "react";
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import Header from './components/Header';
+import Login from './pages/Login';
+import ForgotPassword from './pages/ForgotPassword'; // Corrigi o nome da importação para corresponder ao arquivo
+import Cadastro from './pages/Cadastro'
+import Home from './pages/Home';
+import './App.css';
 
+// Criação do roteador com as rotas definidas
 const router = createBrowserRouter([
   {
     element: (
       <>
         <Header />
-        <Outlet />
+        <main>
+          <Outlet />
+        </main>
       </>
     ),
     children: [
       {
-        path: "/",
-        element: <Home />,
+        path: '/',
+        element: <Home />
       },
       {
-        path: "/login",
-        element: <Login />,
+        path: '/login',
+        element: <Login />
       },
       {
-        path: "/register",
-        element: <Register />,
+        path: '/cadastro',
+        element: <Cadastro />
       },
       {
-        path: "/password-recovery",
-        element: <ForgotPassword />,
-      },
-    ],
-  },
+        path: '/forgot-password',
+        element: <ForgotPassword />
+      }
+    ]
+  }
 ]);
 
-export default function App() {
+// Componente principal
+function App() {
   return (
     <>
       <RouterProvider router={router} />
@@ -45,3 +49,5 @@ export default function App() {
     </>
   );
 }
+
+export default App;
