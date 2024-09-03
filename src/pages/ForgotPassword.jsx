@@ -10,7 +10,7 @@ export default function ForgotPassword() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "https://backend-southstar.onrender.com",
+        "https://backend-southstar.onrender.com/forgot-password",
         {
           name,
         }

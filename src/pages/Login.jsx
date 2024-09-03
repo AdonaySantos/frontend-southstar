@@ -12,7 +12,7 @@ export default function Login() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "https://backend-southstar.onrender.com",
+        "https://backend-southstar.onrender.com/login",
         {
           name,
           password,
@@ -56,7 +56,7 @@ export default function Login() {
                 <input type="checkbox" />
                 Lembre de mim
               </label>
-              <a href="/password-recovery">Esqueceu a senha?</a>
+              <a href="/forgot-password">Esqueceu a senha?</a>
             </div>
             <button type="submit">Entrar</button>
             <div className="signup-link">

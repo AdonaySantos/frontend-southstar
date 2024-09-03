@@ -12,7 +12,7 @@ export default function Cadastro() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://backend-southstar.onrender.com",
+        "https://backend-southstar.onrender.com/register",
         {
           name,
           password,
