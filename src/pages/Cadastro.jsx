@@ -26,8 +26,9 @@ export default function Cadastro() {
 
   return (
     <>
-      <div className="registro">
+      <div className="Registro">
         <div className="container">
+          
           <h1>Cadastro</h1>
           <form onSubmit={handleSubmit}>
             <div className="input-field">

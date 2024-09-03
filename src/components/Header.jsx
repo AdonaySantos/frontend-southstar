@@ -1,5 +1,4 @@
 import "./Header.css";
-import logo from "../assets/react.svg";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -7,8 +6,10 @@ export default function Header() {
     <>
       <header className="header">
         <div className="logo">
-          <img src={logo} alt="" />
+          <h1>SouthStar</h1>
+
         </div>
+
         <div className="links-nav">
           <Link to="/">Home</Link>
           <Link to="/login">Login</Link>
